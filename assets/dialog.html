@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org" />
+<meta http-equiv="Content-Type" content=
+"text/html; charset=utf-8" />
+<title>分别测试javascript的三种对话框</title>
+<script type="text/javascript" language="javascript">
+function ale()
+{
+    alert("这是一个警告对话框1！");
+    alert("这是一个警告对话框2！");
+}
+function firm()
+{
+    if(confirm("去百度看看？"))
+    {
+        location.href="http://www.baidu.com";
+    }
+    else
+    {
+        alert("你选择了不去！");
+    }
+}
+function prom()
+{
+    var str=prompt("演示一个带输入的对话框","这里输入你的信息");
+    if(str)
+    {
+        alert("谢谢使用，你输入的是："+ str)
+    }
+}
+</script>
+</head>
+<body>
+<p>下面我们演示3种对话框</p>
+
+<p>警告、提醒对话框</p>
+
+<p><input type="submit" name="Submit" value="alert" onclick=
+"ale()" /></p>
+
+<p>带选择的对话框</p>
+
+<p><input type="submit" name="Submit2" value="confirm" onclick=
+"firm()" /></p>
+
+<p>要求用户输入的对话框</p>
+
+<p><input type="submit" name="Submit3" value="prompt" onclick=
+"prom()" /></p>
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+<html xmlns=
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+<meta name="generator" content="HTML Tidy, see www.w3.org" />
+<script src="DateSelect.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+    //alert(prompt("请输入内容","默认值"));
+    //alert(confirm("confirm"));  
+</script>
+
+<title></title>
+</head>
+<body>
+实测发现，webview支持event属性,客户端代码中的DateSelect(sID)可以不ReplaceAll成
+DateSelct(this.id)<br />
+<input id="0.2650579381488643" readonly="" onclick=
+"alert(this.id);alert(event.srcElement.id);" value="2013-02-20" />
+<input id="123" readonly="" onclick="DateSelect(this.id)" value=
+"2013-02-20" />
+</body>
+</html>
+
